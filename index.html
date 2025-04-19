@@ -88,10 +88,45 @@
           </li>
         </ul>
       </div>
-      <div class="div2"><a href="">2</a></div>
+      <div class="div2">
+        <a href=""
+          ><div class="slider-container" id="slider">
+            <div class="slider-item">
+              GALAXY S25 ULTRA<br /><span>Giá tốt chốt ngay</span>
+            </div>
+            <div class="slider-item">
+              MACBOOK AIR M4<br /><span>Mua ngay</span>
+            </div>
+            <div class="slider-item">
+              POCO X7 PRO<br /><span>Chỉ có tại CPS</span>
+            </div>
+            <div class="slider-item">
+              TAB S10 FE SERIES<br /><span>Giá chỉ từ 11.990</span>
+            </div>
+            <div class="slider-item">
+              LOA MARSHALL<br /><span><b>Voucher đến 1 triệu</b></span>
+            </div>
+          </div></a
+        >
+      </div>
       <div class="div3"><a href="">3</a></div>
       <div class="div4"><a href="">4</a></div>
       <div class="div5"><a href="">5</a></div>
     </div>
+    <script>
+      const slider = document.getElementById("slider");
+      let scrollAmount = 0;
+
+      setInterval(() => {
+        scrollAmount += 100; // khoảng cách mỗi lần scroll (tùy vào độ rộng item)
+        if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+          scrollAmount = 0; // quay về đầu nếu tới cuối
+        }
+        slider.scrollTo({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
+      }, 3000); // mỗi 3 giây lướt một lần
+    </script>
   </body>
 </html>
