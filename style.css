@@ -39,7 +39,7 @@ nav ul li a {
 }
 nav ul li:nth-child(4) input {
   outline: none;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 30px;
   width: 240px;
   background-color: #d9eafd;
@@ -74,9 +74,11 @@ nav ul li:nth-child(8) button {
 }
 nav ul li:nth-child(1) img {
   width: 65px;
+  margin-left: 20px;
 }
-nav ul li:nth-child(3) i {
-  font-size: 24px;
+
+nav ul li:nth-child(2) {
+  padding-left: 50px;
 }
 nav ul li:nth-child(2) button {
   background-color: #578fca;
@@ -87,6 +89,9 @@ nav ul li:nth-child(2) button {
   height: 42px;
   width: 120px;
 }
+nav ul li:nth-child(2) a i {
+  padding-left: 10px;
+}
 nav ul li:nth-child(3) {
   background-color: #578fca;
   padding: auto;
@@ -94,24 +99,39 @@ nav ul li:nth-child(3) {
   cursor: pointer;
   position: relative;
   height: 42px;
-  width: auto;
+  width: 120px;
 }
+nav ul li:nth-child(3) a button {
+  background-color: #578fca;
+  padding: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  height: 42px;
+  width: 120px;
+}
+nav ul li:nth-child(3) i {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
 /* ------------------------------------noidungtrang--------------------------------- */
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
+  margin-top: 10px;
 }
 
 .div1 {
   grid-row: span 3 / span 3;
-  border-radius: 6px;
+  border-radius: 10px;
   border-color: #39679c;
   background-color: #ffffff;
-  border: 6px;
-
-  padding-left: 150px;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px #acaaaa;
+  margin-left: 150px;
 }
 .div1 ul li {
   padding: 15px;
@@ -122,6 +142,9 @@ nav ul li:nth-child(3) {
 .div1 ul li a:hover {
   color: #39679c;
 }
+.div1 ul li:hover {
+  background-color: rgb(194, 187, 187);
+}
 .div1 ul li a i {
   justify-content: space-between;
   margin-right: 0;
@@ -131,18 +154,41 @@ nav ul li:nth-child(3) {
 .div2 {
   grid-column: span 3 / span 3;
   grid-row: span 3 / span 3;
+  border-radius: 10px;
+  border-color: #39679c;
+  background-color: #ffffff;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px #acaaaa;
 }
 
 .div3 {
   grid-column-start: 5;
+  border-radius: 10px;
+  border-color: #39679c;
+  background-color: #ffffff;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px #acaaaa;
+  margin-right: 150px;
 }
 
 .div4 {
   grid-column-start: 5;
   grid-row-start: 2;
+  border-radius: 10px;
+  border-color: #39679c;
+  background-color: #ffffff;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px #acaaaa;
+  margin-right: 150px;
 }
 
 .div5 {
   grid-column-start: 5;
   grid-row-start: 3;
+  border-radius: 10px;
+  border-color: #39679c;
+  background-color: #ffffff;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px #acaaaa;
+  margin-right: 150px;
 }
