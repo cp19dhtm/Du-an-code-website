@@ -132,23 +132,36 @@ nav ul li:nth-child(3) i {
   border: 1px solid;
   box-shadow: 2px 2px 2px #acaaaa;
   margin-left: 150px;
+  max-width: 210px;
+  max-height: auto;
 }
 .div1 ul li {
   padding: 15px;
 }
-.div1 ul li a i {
-  text-align: right;
+.div1 ul li {
+  position: relative;
+}
+
+.div1 ul li a {
+  display: block;
+  padding-right: 25px;
+  position: relative;
+  color: rgb(16, 10, 16);
+  text-decoration: none;
+}
+
+.div1 ul li a i:nth-child(2) {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .div1 ul li a:hover {
   color: #39679c;
 }
 .div1 ul li:hover {
   background-color: rgb(194, 187, 187);
-}
-.div1 ul li a i {
-  justify-content: space-between;
-  margin-right: 0;
-  right: 0;
+  border-radius: 10px;
 }
 
 .div2 {
