@@ -230,3 +230,17 @@ nav ul li:nth-child(3) i {
   text-align: center;
   font-family: Arial, sans-serif;
 }
+/* ----------------------an-nut-danh-muc */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+.show {
+  display: block !important;
+}

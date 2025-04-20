@@ -24,8 +24,9 @@
             /></a>
           </li>
           <li>
-            <a href=""
-              ><button>Danh mục<i class="fa-solid fa-bars"></i></button
+            <a href="">
+              <button id="an-nut">
+                Danh mục<i class="fa-solid fa-bars"></i></button
             ></a>
           </li>
 
@@ -67,16 +68,25 @@
         </ul>
       </div>
     </nav>
+    <div id="overlay" class="overlay"></div>
 
     <div class="parent">
-      <div class="div1">
+      <div class="div1" id="menu">
         <ul>
           <li>
             <a href="">
               <i class="fa-solid fa-mobile"></i> Điện thoại
               <i class="fa-solid fa-chevron-right"></i
             ></a>
-            <div class="submenu">ul</div>
+            <div class="submenu">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="">
@@ -143,6 +153,22 @@
           behavior: "smooth",
         });
       }, 3000); // mỗi 3 giây lướt một lần
+      // phan-danh-muc//
+
+      // Toggle menu danh mục
+      const toggleBtn = document.getElementById("an-nut");
+      const overlay = document.getElementById("overlay");
+      const menu = document.getElementById("menu");
+
+      toggleBtn.addEventListener("click", () => {
+        overlay.classList.add("show");
+        menu.classList.add("show");
+      });
+
+      overlay.addEventListener("click", () => {
+        overlay.classList.remove("show");
+        menu.classList.remove("show");
+      });
     </script>
   </body>
 </html>
