@@ -172,6 +172,8 @@ nav ul li:nth-child(3) i {
   background-color: #ffffff;
   border: 1px solid;
   box-shadow: 2px 2px 2px #acaaaa;
+  width: fit-content;
+  position: relative;
 }
 
 .div3 {
@@ -182,6 +184,8 @@ nav ul li:nth-child(3) i {
   border: 1px solid;
   box-shadow: 2px 2px 2px #acaaaa;
   margin-right: 150px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .div4 {
@@ -193,6 +197,8 @@ nav ul li:nth-child(3) i {
   border: 1px solid;
   box-shadow: 2px 2px 2px #acaaaa;
   margin-right: 150px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .div5 {
@@ -204,32 +210,15 @@ nav ul li:nth-child(3) i {
   border: 1px solid;
   box-shadow: 2px 2px 2px #acaaaa;
   margin-right: 150px;
+  width: fit-content;
+  height: fit-content;
 }
 /* ------------------------------div2--------------------------- */
-.slider-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 20px;
-  white-space: nowrap;
-  padding: 10px;
-  scrollbar-width: none; /* Ẩn scrollbar trên Firefox */
+.Slider-top {
+  position: relative;
+  width: 100%;
 }
 
-.slider-container::-webkit-scrollbar {
-  display: none; /* Ẩn scrollbar trên Chrome */
-}
-
-.slider-item {
-  min-width: 250px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
 /* ----------------------an-nut-danh-muc */
 .divfull .blur {
   filter: blur(4px);

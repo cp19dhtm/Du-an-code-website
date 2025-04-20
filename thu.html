@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styless.css" />
     <title>Document</title>
   </head>
   <body>
@@ -21,5 +22,43 @@
         </form>
       </div>
     </div>
+    <div class="div2">
+      <!-- Slider hình ảnh -->
+      <div class="slider-container" id="slider">
+        <div class="slide active">
+          <img src="./ảnh/slide1.webp" alt="iPhone" />
+        </div>
+        <div class="slide">
+          <img src="./ảnh/slide2.webp" alt="OPPO" />
+        </div>
+        <div class="slide">
+          <img src="./ảnh/slide3.webp" alt="Galaxy" />
+        </div>
+        <div class="slide">
+          <img src="./ảnh/slide4.webp" alt="MacBook" />
+        </div>
+        <div class="slide">
+          <img src="./ảnh/slide5.webp" alt="POCO" />
+        </div>
+      </div>
+
+      <!-- Hộp chuyển ảnh -->
+      <div class="slider-nav" id="sliderNav">
+        <div class="nav-item active" data-index="0">
+          <strong>IPHONE 16 PRO MAX</strong><br />Lên đời ngay
+        </div>
+        <div class="nav-item" data-index="1">
+          OPPO FIND N5<br />Ưu đãi tốt mua ngay
+        </div>
+        <div class="nav-item" data-index="2">
+          GALAXY S25 ULTRA<br />Giá tốt chốt ngay
+        </div>
+        <div class="nav-item" data-index="3">MACBOOK AIR M4<br />Mua ngay</div>
+        <div class="nav-item" data-index="4">
+          POCO X7 PRO<br />Chỉ có tại CPS
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
