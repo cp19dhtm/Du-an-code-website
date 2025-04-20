@@ -231,16 +231,8 @@ nav ul li:nth-child(3) i {
   font-family: Arial, sans-serif;
 }
 /* ----------------------an-nut-danh-muc */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  display: none;
-}
-.show {
-  display: block !important;
+.divfull .blur {
+  filter: blur(4px);
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
