@@ -62,7 +62,8 @@
           </li>
           <li>
             <a href=""
-              ><button>Tài khoản <i class="fa-solid fa-user"></i></button
+              ><button id="loginBtn">
+                Tài khoản <i class="fa-solid fa-user"></i></button
             ></a>
           </li>
         </ul>
@@ -116,7 +117,7 @@
       <div class="div2">
         <div class="slider-container" id="slider">
           <div class="slide active">
-            <a href="./ttsanpham.html" target="_blank"
+            <a href="./ttsanpham.html"
               ><img src="./ảnh/slide1.webp" alt="iPhone"
             /></a>
           </div>
@@ -180,7 +181,22 @@
         </div>
       </div>
     </div>
-
+    <!-- -------------thon-tin-tai-khoan -------------------->
+    <div id="overlay" class="overlay hidden">
+      <div class="login-form">
+        <h2>Đăng nhập</h2>
+        <form id="loginForm">
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Mật khẩu (≥8 ký tự)"
+            required
+          />
+          <button type="submit">Đăng nhập</button>
+        </form>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
